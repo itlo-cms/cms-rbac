@@ -1,0 +1,39 @@
+{
+	"name": "itlo/cms-rbac",
+	"description": "RBAC for ITLO CMS",
+	"keywords": ["yii", "itlo", "framework", "component", "rbac"],
+    	"homepage": "http://cms.skeeks.com/",
+	"type": "yii2-extension",
+	"license": "GPL-3.0+",
+	"support": {
+        "issues": "http://itlo.ru/",
+        "wiki": "http://en.cms.itlo.ru/docs/",
+        "source": "https://github.com/itlo-cms/cms-rbac"
+    },
+	"authors": [
+		{
+			"name": "Ivan Roman",
+			"email": "logachev.work@gmail.com"
+		}
+	],
+	"require": {
+		"itlo/cms": "dev-master"
+	},
+    "autoload": {
+        "psr-4": {
+            "skeeks\\cms\\rbac\\": "src/"
+        }
+    },
+    "extra": {
+        "config-plugin": {
+            "web": [
+				"src/config/common.php",
+				"src/config/web.php"
+			],
+            "console": [
+				"src/config/common.php",
+				"src/config/console.php"
+			]
+        }
+    }
+}
